@@ -743,26 +743,27 @@ img {
 .project-img-wrapper {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 320px;
   overflow: hidden;
-  background: var(--bg-alt);
+  background: #ffffff;
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #ffffff;
   transition: transform var(--transition-smooth);
 }
 
 .project-card:hover .project-img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .project-category-badge {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(8px);
   color: #ffffff;
@@ -1326,7 +1327,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 
   .project-img-wrapper {
-    height: 220px;
+    height: 260px;
   }
 
   /* ROAS Calculator Mobile Tuning */
