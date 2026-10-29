@@ -189,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const name = document.getElementById('clientName')?.value.trim() || '';
       const email = document.getElementById('clientEmail')?.value.trim() || '';
+      const phone = document.getElementById('clientPhone')?.value.trim() || 'Not provided';
       const website = document.getElementById('clientWebsite')?.value.trim() || 'Not provided';
       const service = document.getElementById('serviceInterest')?.value || 'General Inquiry';
 
@@ -207,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify({
             Name: name,
             Email: email,
+            Phone_or_WhatsApp: phone,
             Website_or_Social: website,
             Service: service,
             _subject: `New Lead from Nived Digital: ${name} (${service})`,
