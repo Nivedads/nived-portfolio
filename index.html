@@ -534,41 +534,45 @@
   <!-- CONSULTATION MODAL -->
   <div class="modal" id="consultationModal">
     <div class="modal-content">
-      <button class="close-modal">&times;</button>
-      <div style="text-align: center; margin-bottom: 2rem;">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <div id="modalHeader" style="text-align: center; margin-bottom: 2rem;">
         <span class="badge" style="margin-bottom: 0.75rem;">Strategy Call</span>
         <h3 style="font-size: 1.75rem;">Book A Free Growth Session</h3>
         <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">Select your interest below and let's craft a high-ROAS blueprint.</p>
       </div>
 
-      <form id="leadForm">
+      <form id="leadForm" action="https://formsubmit.co/amalnived111@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Growth Session Request - Nived Digital">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
         <div class="form-group">
           <label for="clientName">Your Name</label>
-          <input type="text" id="clientName" class="form-control" placeholder="e.g. Alex Johnson" required>
+          <input type="text" id="clientName" name="name" class="form-control" placeholder="e.g. Alex Johnson" required>
         </div>
 
         <div class="form-group">
           <label for="clientEmail">Email Address</label>
-          <input type="email" id="clientEmail" class="form-control" placeholder="alex@yourbrand.com" required>
+          <input type="email" id="clientEmail" name="email" class="form-control" placeholder="alex@yourbrand.com" required>
         </div>
 
         <div class="form-group">
           <label for="clientWebsite">Store URL / Instagram</label>
-          <input type="text" id="clientWebsite" class="form-control" placeholder="yourbrand.com or @yourbrand">
+          <input type="text" id="clientWebsite" name="website" class="form-control" placeholder="yourbrand.com or @yourbrand">
         </div>
 
         <div class="form-group">
           <label for="serviceInterest">Service Interested In</label>
-          <select id="serviceInterest" class="form-control">
-            <option value="meta">Meta Ads (Facebook & Instagram Ads)</option>
-            <option value="google">Google Ads & Performance Max (PMax)</option>
-            <option value="website">Website & Shopify Store Development</option>
-            <option value="audit">Ad Account Teardown & Audit</option>
-            <option value="full">Full Meta + Google Ads + Website Scaling Package</option>
+          <select id="serviceInterest" name="service" class="form-control">
+            <option value="Meta Ads (Facebook & Instagram Ads)">Meta Ads (Facebook & Instagram Ads)</option>
+            <option value="Google Ads & Performance Max (PMax)">Google Ads & Performance Max (PMax)</option>
+            <option value="Website & Shopify Store Development">Website & Shopify Store Development</option>
+            <option value="Ad Account Teardown & Audit">Ad Account Teardown & Audit</option>
+            <option value="Full Scaling Package (Meta + Google + CRO)">Full Meta + Google Ads + Website Scaling Package</option>
           </select>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1rem;">
+        <button type="submit" id="submitLeadBtn" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1rem;">
           Submit & Reserve Audit Slot
         </button>
       </form>
@@ -577,8 +581,9 @@
         <div style="font-size: 3rem; color: var(--accent-green); margin-bottom: 1rem;">
           <i class="fa-solid fa-circle-check"></i>
         </div>
-        <h3>Request Received!</h3>
-        <p style="color: var(--text-muted); margin-top: 0.5rem;">Nived will review your brand details and reach out within 24 hours.</p>
+        <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Request Received!</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Nived will review your brand details and reach out within 24 hours.</p>
+        <button type="button" class="btn btn-outline close-modal" style="padding: 0.75rem 2rem;">Done</button>
       </div>
     </div>
   </div>

@@ -1432,3 +1432,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
     right: 0 !important;
   }
 }
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none;
+}

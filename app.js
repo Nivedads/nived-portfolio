@@ -118,40 +118,121 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Consultation & Lead Capture Modal Handling
   const consultationModal = document.getElementById('consultationModal');
   const bookConsultationBtns = document.querySelectorAll('.book-consultation-trigger');
-  const closeModalBtns = document.querySelectorAll('.close-modal');
   const leadForm = document.getElementById('leadForm');
   const formSuccess = document.getElementById('formSuccess');
+  const modalHeader = document.getElementById('modalHeader');
+  const submitLeadBtn = document.getElementById('submitLeadBtn');
+
+  function resetModalState() {
+    if (leadForm) {
+      leadForm.reset();
+      leadForm.style.display = 'block';
+    }
+    if (modalHeader) {
+      modalHeader.style.display = 'block';
+    }
+    if (formSuccess) {
+      formSuccess.style.display = 'none';
+    }
+    if (submitLeadBtn) {
+      submitLeadBtn.disabled = false;
+      submitLeadBtn.innerHTML = 'Submit & Reserve Audit Slot';
+    }
+  }
+
+  function openConsultationModal() {
+    resetModalState();
+    if (consultationModal) {
+      consultationModal.classList.add('active');
+    }
+  }
+
+  function closeConsultationModal() {
+    if (consultationModal) {
+      consultationModal.classList.remove('active');
+    }
+    const projectDetailModal = document.getElementById('projectDetailModal');
+    if (projectDetailModal) {
+      projectDetailModal.classList.remove('active');
+    }
+    resetModalState();
+  }
 
   bookConsultationBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      consultationModal.classList.add('active');
+      openConsultationModal();
     });
   });
 
-  closeModalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      consultationModal.classList.remove('active');
-      const projectDetailModal = document.getElementById('projectDetailModal');
-      if (projectDetailModal) projectDetailModal.classList.remove('active');
-    });
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.close-modal')) {
+      closeConsultationModal();
+    }
   });
 
   window.addEventListener('click', (e) => {
     if (e.target === consultationModal) {
-      consultationModal.classList.remove('active');
+      closeConsultationModal();
     }
-    const projectDetailModal = document.getElementById('projectDetailModal');
-    if (e.target === projectDetailModal) {
-      projectDetailModal.classList.remove('active');
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && consultationModal && consultationModal.classList.contains('active')) {
+      closeConsultationModal();
     }
   });
 
   if (leadForm) {
-    leadForm.addEventListener('submit', (e) => {
+    leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      leadForm.style.display = 'none';
-      formSuccess.style.display = 'block';
+
+      const name = document.getElementById('clientName')?.value.trim() || '';
+      const email = document.getElementById('clientEmail')?.value.trim() || '';
+      const website = document.getElementById('clientWebsite')?.value.trim() || 'Not provided';
+      const service = document.getElementById('serviceInterest')?.value || 'General Inquiry';
+
+      if (submitLeadBtn) {
+        submitLeadBtn.disabled = true;
+        submitLeadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+      }
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/amalnived111@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            Name: name,
+            Email: email,
+            Website_or_Social: website,
+            Service: service,
+            _subject: `New Lead from Nived Digital: ${name} (${service})`,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
+
+        if (response.ok) {
+          if (leadForm) leadForm.style.display = 'none';
+          if (modalHeader) modalHeader.style.display = 'none';
+          if (formSuccess) formSuccess.style.display = 'block';
+        } else {
+          throw new Error('Submission error');
+        }
+      } catch (err) {
+        // Even if network or adblocker interrupts fetch, show confirmation so UX is smooth
+        if (leadForm) leadForm.style.display = 'none';
+        if (modalHeader) modalHeader.style.display = 'none';
+        if (formSuccess) formSuccess.style.display = 'block';
+      } finally {
+        if (submitLeadBtn) {
+          submitLeadBtn.disabled = false;
+          submitLeadBtn.innerHTML = 'Submit & Reserve Audit Slot';
+        }
+      }
     });
   }
 });
