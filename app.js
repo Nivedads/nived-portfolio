@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (leadForm) {
-    leadForm.addEventListener('submit', async (e) => {
+    leadForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const name = document.getElementById('clientName')?.value.trim() || '';
@@ -193,48 +193,51 @@ document.addEventListener('DOMContentLoaded', () => {
       const website = document.getElementById('clientWebsite')?.value.trim() || 'Not provided';
       const service = document.getElementById('serviceInterest')?.value || 'General Inquiry';
 
-      if (submitLeadBtn) {
-        submitLeadBtn.disabled = true;
-        submitLeadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+      // 1. Build pre-filled WhatsApp message with lead details
+      const waMessage = 
+`*New Growth Session Request - Nived Digital*
+----------------------------------------
+*Name:* ${name}
+*Email:* ${email}
+*Phone/WhatsApp:* ${phone}
+*Website / Store:* ${website}
+*Service Interested:* ${service}
+----------------------------------------
+Hi Nived, I just requested a strategy audit session on your website. Let's discuss!`;
+
+      const whatsappUrl = `https://wa.me/918590101541?text=${encodeURIComponent(waMessage)}`;
+
+      // 2. Open WhatsApp immediately in new tab / app
+      window.open(whatsappUrl, '_blank');
+
+      // 3. Switch modal view to confirmation & update WhatsApp link button
+      if (leadForm) leadForm.style.display = 'none';
+      if (modalHeader) modalHeader.style.display = 'none';
+      if (formSuccess) formSuccess.style.display = 'block';
+
+      const successWaBtn = document.getElementById('successWaBtn');
+      if (successWaBtn) {
+        successWaBtn.href = whatsappUrl;
       }
 
-      try {
-        const response = await fetch('https://formsubmit.co/ajax/amalnived111@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            Name: name,
-            Email: email,
-            Phone_or_WhatsApp: phone,
-            Website_or_Social: website,
-            Service: service,
-            _subject: `New Lead from Nived Digital: ${name} (${service})`,
-            _template: 'table',
-            _captcha: 'false'
-          })
-        });
-
-        if (response.ok) {
-          if (leadForm) leadForm.style.display = 'none';
-          if (modalHeader) modalHeader.style.display = 'none';
-          if (formSuccess) formSuccess.style.display = 'block';
-        } else {
-          throw new Error('Submission error');
-        }
-      } catch (err) {
-        // Even if network or adblocker interrupts fetch, show confirmation so UX is smooth
-        if (leadForm) leadForm.style.display = 'none';
-        if (modalHeader) modalHeader.style.display = 'none';
-        if (formSuccess) formSuccess.style.display = 'block';
-      } finally {
-        if (submitLeadBtn) {
-          submitLeadBtn.disabled = false;
-          submitLeadBtn.innerHTML = 'Submit & Reserve Audit Slot';
-        }
-      }
+      // 4. Send background email notification backup via FormSubmit
+      fetch('https://formsubmit.co/ajax/amalnived111@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: name,
+          Email: email,
+          Phone_or_WhatsApp: phone,
+          Website_or_Social: website,
+          Service: service,
+          _subject: `New WhatsApp Lead: ${name} (${service})`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      }).catch(() => {});
     });
   }
 });
