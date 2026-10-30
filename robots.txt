@@ -1,0 +1,7 @@
+# robots.txt for https://niveddigital.com/
+User-agent: *
+Allow: /
+
+# Host & Sitemap
+Host: https://niveddigital.com
+Sitemap: https://niveddigital.com/sitemap.xml

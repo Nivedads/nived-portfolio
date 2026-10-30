@@ -115,6 +115,32 @@ document.addEventListener('DOMContentLoaded', () => {
     calculateROI(); // Initial calculation
   }
 
+  // 4b. FAQ Accordion Toggle (SEO & User Engagement)
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parentItem = btn.closest('.faq-item');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+      // Close other open items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== parentItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current
+      if (isExpanded) {
+        parentItem.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        parentItem.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   // 5. Consultation & Lead Capture Modal Handling
   const consultationModal = document.getElementById('consultationModal');
   const bookConsultationBtns = document.querySelectorAll('.book-consultation-trigger');

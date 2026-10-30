@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://niveddigital.com/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://niveddigital.com/assets/images/project_meta_ads.jpg</image:loc>
+      <image:title>Lexen E-commerce Meta Ads Scaling Case Study</image:title>
+      <image:caption>Nived Digital Meta Ads Performance Marketing Campaign</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://niveddigital.com/assets/images/project_onstara.jpg</image:loc>
+      <image:title>Onstara Fashion Google Ads Search and PMax Case Study</image:title>
+      <image:caption>Google Ads E-Commerce Performance Campaign</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://niveddigital.com/assets/images/nived_real_photo.jpg</image:loc>
+      <image:title>Nived - Meta Ads and Google Ads Performance Marketing Specialist</image:title>
+    </image:image>
+  </url>
+</urlset>
