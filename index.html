@@ -167,24 +167,26 @@
 }
   </script>
   <style>
-    #work .project-card { position: relative; isolation: isolate; background: #101b30; }
-    #work .client-art, #work .project-card::after {
-      position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+    #work .project-card { background: #fff; }
+    #work .client-art {
+      display: block;
+      width: 100%;
+      aspect-ratio: 2.35;
+      object-fit: cover;
+      object-position: center top;
+      background: #f4f3f0;
+      border-bottom: 1px solid #e8e6e2;
     }
-    #work .client-art { z-index: -2; object-fit: cover; object-position: center 28%; }
-    #work .project-card::after {
-      content: ""; z-index: -1;
-      background: linear-gradient(90deg, #101b30f5 0%, #101b30e6 50%, #101b3060 100%);
-    }
-    #work .project-title { color: #fff; }
-    #work .project-desc { color: #edf2fa; }
     #work .project-info > .project-desc:first-child {
-      display: inline-block; border: 1px solid #ffffff55; border-radius: 999px;
-      padding: .25rem .7rem; font-size: .75rem; font-weight: 600;
-      background: #101b3088;
+      display: inline-block;
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      background: #f4f3f0;
+      color: #45423c;
+      font-size: .75rem;
+      font-weight: 600;
+      margin-bottom: .65rem;
     }
-    #work .project-info .btn { background: #fff; color: #101b30; border-color: #fff; }
-    #work .project-info .btn:hover { background: #e5efff; }
   </style>
 </head>
 <body>
