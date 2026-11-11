@@ -7,27 +7,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
-  // 0. THEME TOGGLE (LIGHT / DARK WITH LOCALSTORAGE)
+  // 0. THEME TOGGLE (OPTIONAL)
   // ------------------------------------------------------------------------
   const themeToggleBtn = document.getElementById('themeToggleBtn');
-  const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
-
-  const savedTheme = localStorage.getItem('nived_theme') || 'light';
-  if (savedTheme === 'dark') {
-    document.body.classList.add('theme-dark');
-    if (themeIcon) {
-      themeIcon.classList.remove('fa-moon');
-      themeIcon.classList.add('fa-sun');
-    }
-  } else {
-    document.body.classList.remove('theme-dark');
-    if (themeIcon) {
-      themeIcon.classList.remove('fa-sun');
-      themeIcon.classList.add('fa-moon');
-    }
-  }
-
   if (themeToggleBtn) {
+    const themeIcon = themeToggleBtn.querySelector('i');
+    const savedTheme = localStorage.getItem('nived_theme') || 'dark';
+    if (savedTheme === 'light') {
+      document.body.classList.remove('theme-dark');
+      if (themeIcon) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    } else {
+      document.body.classList.add('theme-dark');
+      if (themeIcon) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+    }
+
     themeToggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('theme-dark');
       const isDark = document.body.classList.contains('theme-dark');
@@ -49,25 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. STICKY NAVBAR & ACTIVE SCROLL SPY
   // ------------------------------------------------------------------------
   const navbar = document.getElementById('navbar');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link, .dm-nav-link');
   const sections = document.querySelectorAll('section[id]');
-  const backToTopBtn = document.getElementById('backToTopBtn');
+  const backToTopBtn = document.getElementById('backToTopBtn') || document.querySelector('.dm-back-top');
 
   function handleScroll() {
     const scrollPos = window.scrollY;
 
     // Navbar compact background state
-    if (scrollPos > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (navbar) {
+      if (scrollPos > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     }
 
     // Back to top button visibility
-    if (scrollPos > 400) {
-      backToTopBtn.classList.add('visible');
-    } else {
-      backToTopBtn.classList.remove('visible');
+    if (backToTopBtn) {
+      if (scrollPos > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
     }
 
     // Scroll spy: highlight current section in navigation
@@ -174,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginationDotsContainer = document.getElementById('sliderPaginationDots');
   const currentSlideNum = document.getElementById('currentSlideNum');
   const totalSlidesNum = document.getElementById('totalSlidesNum');
-  const filterTabs = document.querySelectorAll('.filter-tab');
+  const filterTabs = document.querySelectorAll('.filter-tab, .dm-filter-tab');
   const projectCards = Array.from(document.querySelectorAll('.project-card'));
 
   function getVisibleCards() {
@@ -598,11 +601,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
   // 7. FAQ ACCORDION
   // ------------------------------------------------------------------------
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqItems = document.querySelectorAll('.faq-item, .dm-faq-final__item');
 
   faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.faq-question');
-    const answer = item.querySelector('.faq-answer');
+    const questionBtn = item.querySelector('.faq-question, .dm-faq-final__question');
+    const answer = item.querySelector('.faq-answer, .dm-faq-final__answer');
+    if (!questionBtn || !answer) return;
 
     questionBtn.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
@@ -610,8 +614,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Close all other items
       faqItems.forEach(otherItem => {
         otherItem.classList.remove('active');
-        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+        const otherBtn = otherItem.querySelector('.faq-question, .dm-faq-final__question');
+        const otherAns = otherItem.querySelector('.faq-answer, .dm-faq-final__answer');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        if (otherAns) otherAns.style.maxHeight = null;
       });
 
       // Toggle clicked item
