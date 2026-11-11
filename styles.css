@@ -439,7 +439,7 @@ input, select, textarea {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
+  align-items: end;
   gap: 40px;
 }
 
@@ -587,121 +587,79 @@ input, select, textarea {
   background: var(--border-subtle);
 }
 
-/* Hero Portrait & Glow */
+/* Hero Portrait & Glow (Exact dmirsha.com visual layout) */
 .dm-hero-final__visual {
   position: relative;
+  width: 100%;
+  height: 590px;
+  align-self: end;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
+  animation: dmFinalPhoto 0.9s 0.15s ease both;
+}
+
+@keyframes dmFinalPhoto {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .dm-hero-final__glow {
   position: absolute;
-  width: 440px;
-  height: 440px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(32, 191, 85, 0.3) 0%, transparent 70%);
-  filter: blur(50px);
+  width: 85%;
+  height: 70%;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(32, 191, 85, 0.35) 0%,
+    rgba(32, 191, 85, 0.16) 40%,
+    transparent 72%
+  );
+  filter: blur(36px);
   pointer-events: none;
   z-index: 1;
 }
 
-.dm-hero-portrait-card {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 420px;
-  border-radius: var(--radius-lg);
-  padding: 10px;
-  background: rgba(14, 22, 17, 0.8);
-  border: 1px solid var(--border-green);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(12px);
-}
-
 .dm-hero-final__image {
   position: relative;
-  border-radius: calc(var(--radius-lg) - 6px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   overflow: hidden;
-  aspect-ratio: 4/5;
-  background: #08110b;
+  z-index: 2;
 }
 
 .dm-photo-img {
+  display: block;
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  transition: transform var(--transition-smooth);
+  max-height: 590px;
+  object-fit: contain;
+  object-position: center bottom;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.7));
 }
 
-.dm-hero-portrait-card:hover .dm-photo-img {
-  transform: scale(1.03);
+.dm-hero-final__visual:hover .dm-photo-img {
+  transform: scale(1.02);
 }
 
-.dm-photo-gradient {
+.dm-hero-final__location {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 65%, rgba(7, 20, 11, 0.85) 100%);
-  pointer-events: none;
-}
-
-/* Floating HUD Badges */
-.dm-floating-badge {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 16px;
-  background: rgba(10, 18, 13, 0.92);
-  border: 1px solid var(--border-green);
-  border-radius: var(--radius-md);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(12px);
   z-index: 3;
-  animation: floatSubtle 6s ease-in-out infinite alternate;
-}
-
-.badge-top-right {
-  top: 25px;
-  right: -20px;
-}
-
-.badge-bottom-left {
-  bottom: 25px;
-  left: -20px;
-  animation-delay: -3s;
-}
-
-@keyframes floatSubtle {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
-}
-
-.dm-badge-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: var(--radius-sm);
-  background: rgba(32, 191, 85, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--green);
-  font-size: 0.95rem;
-}
-
-.dm-badge-lbl {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--text-muted);
+  right: 0;
+  bottom: 22px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.dm-badge-val {
-  font-size: 0.92rem;
-  font-weight: 800;
-  color: var(--white);
-  font-family: var(--font-mono);
 }
 
 /* --------------------------------------------------------------------------
@@ -2621,14 +2579,25 @@ input, select, textarea {
     justify-content: center;
   }
 
-  .badge-top-right {
-    right: 4px;
-    top: 15px;
+  .dm-hero-final__inner {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: center;
   }
 
-  .badge-bottom-left {
-    left: 4px;
-    bottom: 15px;
+  .dm-hero-final__visual {
+    height: min(100vw, 460px);
+    margin-top: 10px;
+  }
+
+  .dm-photo-img {
+    max-height: 460px;
+  }
+
+  .dm-hero-final__location {
+    bottom: 10px;
+    right: 10px;
+    font-size: 8.5px;
   }
 
   .dm-services-grid {
