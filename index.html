@@ -1,1415 +1,225 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <link rel="canonical" href="https://niveddigital.com/">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amal Nived | Performance Marketer</title><meta name="description" content="Amal Nived, performance marketer in Kerala. Meta Ads, Google Ads, Shopify development, and conversion optimization.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#050909;--ink:#f5f7f6;--muted:#a4afac;--green:#1fc25b;--line:#ffffff20}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}a:hover{color:var(--green)}p{color:var(--muted)}header{position:sticky;z-index:3;top:14px;margin:14px 2.5vw 0;min-height:70px;padding:9px 22px 9px 30px;border:1px solid var(--line);border-radius:15px;background:#151515f5;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{font-weight:800;font-size:36px;letter-spacing:-.14em;line-height:1;padding-right:8px}.logo span,strong{color:var(--green)}nav{display:flex;align-items:center;gap:23px;font-size:12px;font-weight:700;text-transform:uppercase;color:#c8cecb}.button{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;background:var(--green);border-radius:6px;color:#03150a;font-weight:800;font-size:12px;text-transform:none}.button:hover{background:#6ce894;color:#03150a}.wrap{width:min(1180px,89%);margin:auto}.hero{background:radial-gradient(ellipse at 58% 45%,#0a2425 0%,#061516 45%,#030606 81%)}.hero .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:740px;gap:36px;padding-block:48px}.eyebrow{font-size:11px;color:#52d281;text-transform:uppercase;letter-spacing:.17em;font-weight:700}.eyebrow.rule:before{content:"";display:inline-block;background:var(--green);width:25px;height:1px;vertical-align:middle;margin-right:12px}h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.04em}h1{font-size:clamp(50px,5vw,76px);margin:12px 0 22px}h2{font-size:clamp(34px,4.3vw,61px);margin:12px 0 22px}h3{font-size:24px}.role{color:var(--ink);font-size:clamp(20px,2vw,28px);line-height:1.4;margin:0 0 20px;letter-spacing:-.04em}.intro{max-width:485px;font-size:14px}.actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin:28px 0}.secondary{font-size:13px;border-bottom:1px solid #ffffff50;padding:9px 0}.tags{max-width:495px;border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;gap:22px;color:var(--muted);font-size:11px}.portrait{position:relative;margin:0;height:580px;display:flex;align-items:end;justify-content:center}.portrait img{width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:brightness(.76) contrast(1.15);mask-image:linear-gradient(black 77%,transparent 99%)}figcaption{position:absolute;bottom:24px;right:0;color:#c0cbc5;font-size:9px;letter-spacing:.17em}.social{position:fixed;right:0;top:47%;z-index:2;background:#121918;border-radius:10px 0 0 10px;padding:12px 9px;color:var(--green);font-size:12px;font-weight:700;writing-mode:vertical-rl}.section{padding-block:80px;border-top:1px solid var(--line)}.split{display:grid;grid-template-columns:1fr 1fr;gap:55px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.card{border:1px solid var(--line);background:#0c1514;border-radius:14px;padding:26px}.card .eyebrow{display:block;margin-bottom:18px}.card p:last-child{margin-bottom:0}.brands{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.brands span{border:1px solid var(--line);border-radius:8px;padding:13px 18px;color:#d0d8d4;font-weight:700}.timeline{border-left:1px solid var(--green);padding-left:24px;display:grid;gap:12px}.band{background:radial-gradient(ellipse at center,#102920,#080f0e 75%);text-align:center}.band p{max-width:520px;margin:0 auto 24px}details{border-bottom:1px solid var(--line);padding:17px 0}summary{cursor:pointer;font-weight:700}summary::marker{color:var(--green)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:20px}.menu{display:none}
+@media(max-width:850px){header{padding-inline:18px}.menu{display:block;color:var(--ink);background:#242424;border:1px solid var(--line);padding:7px 12px;border-radius:6px;font:inherit}nav{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#151515;padding:18px;flex-wrap:wrap;border-radius:12px}nav.open{display:flex}.hero .wrap{min-height:620px}.portrait{height:440px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.hero .wrap,.split,.cards{grid-template-columns:1fr}.hero .wrap{padding-block:52px 12px;gap:14px}.portrait{height:400px}.section{padding-block:52px}.split{gap:24px}.social{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#brands h2{font-size:clamp(34px,4.3vw,61px)}
+.band .actions{justify-content:center;margin-bottom:0}
+.project-link{display:inline-block;margin-top:10px;text-decoration:underline;text-underline-offset:4px}
+.feature{margin-top:26px;padding:clamp(22px,4vw,48px);background:#0c1514;border:1px solid var(--line);border-radius:14px}
+.result{color:var(--green);font-size:clamp(42px,6vw,78px);line-height:1;font-weight:800;letter-spacing:-.07em}
+.social-rail{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:2;border-radius:11px 0 0 11px;overflow:hidden}
+.social-toggle,.social-link{width:52px;display:grid;place-items:center;color:#fff}
+.social-toggle{height:32px;background:#090909;border:0;cursor:pointer;font:22px/1 Inter,Arial,sans-serif}
+.social-link{height:52px}
+.social-link:hover{color:#fff;text-decoration:none;filter:brightness(1.12)}
+.social-rail :focus-visible{outline:2px solid white;outline-offset:-4px}
+.linkedin{background:#076e9f;font-size:25px;font-weight:800}
+.instagram{background:linear-gradient(135deg,#6223aa,#e54439 55%,#f8c76b)}
+.camera{position:relative;width:19px;height:19px;border:2px solid white;border-radius:6px}
+.camera::before{content:"";position:absolute;inset:3px;border:1.5px solid white;border-radius:50%}
+.camera::after{content:"";position:absolute;right:2px;top:2px;width:2px;height:2px;border-radius:50%;background:white}
+@media(max-width:580px){.social-rail{top:auto;bottom:18px;transform:none}.social-toggle,.social-link{width:44px}.social-toggle,.social-link{height:44px}}
+ .carousel-tools{display:flex;justify-content:flex-end;gap:8px;margin-top:26px}
+.carousel-tools button{min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:8px;background:#0c1514;color:var(--ink);font:inherit;cursor:pointer}
+.carousel-tools button:hover{border-color:var(--green);color:var(--green)}
+.project-track{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:calc((100% - 28px)/3);overflow-x:auto;scrollbar-color:#327350 #0c1514;margin-top:12px;padding-bottom:12px}
 
-  <!-- Primary SEO Meta Tags -->
-  <title>Nived Digital | Best Performance Marketing Consultant in Kerala, India | Meta & Google Ads Specialist</title>
-  <meta name="title" content="Nived Digital | Best Performance Marketing Consultant in Kerala, India">
-  <meta name="description" content="Nived is a dedicated Meta Ads and Google Ads Performance Marketing Consultant in Kerala, India helping businesses scale revenue, cut CAC, and achieve 4.8x+ ROAS.">
-  <meta name="author" content="Nived">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow">
-  <meta name="theme-color" content="#07140b">
-  <meta name="format-detection" content="telephone=no">
+@media(max-width:850px){.project-track{grid-auto-columns:calc((100% - 14px)/2)}}
+@media(max-width:580px){.project-track{grid-auto-columns:88%}}
+ .brands{align-items:stretch}
+.brands .brand-flyro{display:inline-flex;align-items:center;gap:11px;padding:9px 14px;border:1px solid #1fc25b70;border-radius:8px;background:#0d211a}
+.brands .brand-flyro img{object-fit:contain}
+.brands .brand-flyro span{border:0;padding:0;color:var(--ink)}
+.brands .brand-flyro .brand-arrow{color:var(--green)}
+.brands .brand-flyro:hover{border-color:var(--green)}
+.brands .brand-logo{display:block;flex:none}.brands .brand-logo.onstara,.brands .brand-logo.logic,.brands .brand-logo.dream-life{background:#fff;border-radius:4px;padding:3px}
+#brand-track{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 8px;scrollbar-color:#327350 #0c1514}
+#brand-track a{flex:none;white-space:nowrap}
+#brand-track{gap:16px;padding-bottom:12px}
+#brand-track .brand-flyro{min-height:64px;padding:12px 17px;gap:13px}
+#brand-track img{width:72px;height:34px;flex:none}
+@media(max-width:580px){
+  #brand-track .brand-flyro{min-height:56px;padding:10px 13px;gap:10px;font-size:14px}
+  #brand-track img{width:64px;height:30px}
+}
+#brands{background:radial-gradient(ellipse at center,#092222,#050909 78%);padding-block:clamp(56px,8vw,112px)}
+#brands .wrap{text-align:center}
+#brands h2{font-size:clamp(32px,3.5vw,52px)}
+#brands p{margin:0 auto;max-width:580px}
+#brands .eyebrow::after{content:"";display:inline-block;width:25px;height:1px;background:var(--green);vertical-align:middle;margin-left:12px}
+#brand-track{margin-top:12px;padding:4px 12px;scrollbar-width:none;mask-image:linear-gradient(to right,transparent,#000 min(5vw,60px),#000 calc(100% - min(5vw,60px)),transparent)}
+#brand-track:focus-within{mask-image:none}
+#brand-track .brand-flyro{position:relative;display:grid;place-items:center;width:clamp(140px,16vw,190px);min-height:clamp(76px,8vw,100px);padding:14px 17px;border:1px solid #dfe7e4;border-radius:13px;background:#fff;color:#0c1514}
+#brand-track .brand-flyro:hover,#brand-track .brand-flyro:focus-visible{border-color:var(--green);outline:2px solid var(--green);outline-offset:-3px}
+#brand-track .brand-flyro img{width:100%;height:clamp(38px,5vw,61px);padding:0;background:transparent;object-fit:contain}
+#brand-track .brand-flyro img[src="flyro-logo.svg"],#brand-track .brand-flyro img.dhathri{filter:brightness(.28)}
+#brand-track .brand-flyro span{color:#0c1514;white-space:normal;text-align:center}
+#brand-track .brand-flyro .brand-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:580px){
+html{scroll-padding-top:84px}
+header{top:8px;margin:8px 12px 0;min-height:56px;padding:5px 12px}
+.menu{min-height:44px;min-width:56px}
+nav.open{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;padding:12px;max-height:calc(100dvh - 90px);overflow:auto}
+nav a{display:flex;align-items:center;min-height:44px;padding-inline:10px}
+nav .button{grid-column:1/-1}
+.wrap{width:calc(100% - 36px)}
+.hero .wrap{min-height:0;padding-top:36px}
+h1{font-size:clamp(40px,12vw,62px);margin-bottom:14px}
+h2{font-size:clamp(29px,8.7vw,42px);overflow-wrap:anywhere}
+.actions{gap:10px 16px;margin-block:19px}
+.actions a,.project-link{min-height:44px;display:inline-flex;align-items:center}
+.portrait{height:clamp(230px,72vw,365px)}
+.section{padding-block:42px}
+.card{padding:20px}
+.project-track{grid-auto-columns:90%}
+#brand-track{mask-image:none}
+.social-rail{bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+}
+</style></head>
+<body id="home"><header><a class="logo" href="#home" aria-label="Amal Nived home">A<span>N</span></a><button class="menu" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#training">Training</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#insights">Insights</a><a href="#contact">Contact</a><a class="button" href="https://wa.me/918590101541">WhatsApp Me ↗</a></nav></header>
+<main><section class="hero"><div class="wrap"><div><div class="eyebrow">Paid Media &amp; Conversion Strategy</div><h1><strong>Nived</strong></h1><p class="role">Performance Marketer in Calicut | Kerala | India</p><p class="intro">I help businesses generate leads and grow online sales with Meta Ads, Google Ads, and Shopify stores built to convert.</p><div class="actions"><a class="button" href="https://wa.me/918590101541">Let’s Work Together</a><a class="secondary" href="#portfolio">View Portfolio</a></div><div class="tags"><span>Meta Ads</span><span>Google Ads</span><span>Shopify Development</span></div></div><figure class="portrait"><img src="portrait.png" alt="Black-and-white portrait of Amal Nived"><figcaption>CALICUT · KERALA · INDIA</figcaption></figure></div></section>
+<aside class="social-rail" aria-label="Social profiles">
+<button class="social-toggle" type="button" aria-expanded="true" aria-controls="social-links" aria-label="Hide social links"><span aria-hidden="true">→</span></button>
+<div id="social-links">
+<a class="social-link linkedin" href="https://in.linkedin.com/in/amalnived" aria-label="Amal Nived on LinkedIn"><span aria-hidden="true">in</span></a>
+<a class="social-link instagram" href="https://www.instagram.com/nived.ads/" aria-label="Nived Ads on Instagram"><span class="camera" aria-hidden="true"></span></a>
+</div>
+</aside>
+<section class="section" id="brands"><div class="wrap"><div class="eyebrow rule">Experience &amp; Collaborations</div><h2>Brands I’ve <strong>Worked With</strong></h2><p>Brands I’ve supported through paid media, Shopify development, and web projects.</p></div><div class="brands" id="brand-track" role="region" aria-label="Brand links" tabindex="0"><a class="brand-flyro" href="https://flyroholidays.com/"><img src="flyro-logo.svg" width="55" height="26" alt=""><span class="brand-label">Flyro Holidays</span></a><a class="brand-flyro" href="https://onstara.in/"><img class="brand-logo onstara" src="onstara.svg" width="55" height="26" alt=""><span class="brand-label">Onstara</span></a><a class="brand-flyro" href="https://dhathriayurveda.in/"><img class="brand-logo dhathri" src="dhathri.png" width="55" height="26" alt=""><span class="brand-label">Dhathri Ayurveda</span></a><a class="brand-flyro" href="https://www.logiceducation.org/"><img class="brand-logo logic" src="logic.png" width="55" height="26" alt=""><span class="brand-label">Logic School of Management</span></a><a class="brand-flyro" href="https://dreamlife-abroad.com/"><img class="brand-logo dream-life" src="dream-life.png" width="72" height="34" alt=""><span class="brand-label">Dream Life Abroad</span></a><a class="brand-flyro" href="https://lexen.in/"><img class="brand-logo" src="lexen-logo.jpg" width="55" height="26" alt=""><span class="brand-label">Lexen</span></a></div></section>
+<section class="section" id="about"><div class="wrap split"><div><div class="eyebrow rule">About Me</div><h2>Hey, I’m <strong>Amal Nived.</strong></h2><p>I’m a performance marketer from Calicut, Kerala. I run paid campaigns and build Shopify stores, landing pages, and tracking systems that connect ad spend to sales. Running my own e-commerce brand, Lexen, gives me firsthand experience with product offers, checkout, and order follow-up.</p></div><div><h3>From the first click to the sale.</h3><p>I plan campaigns around the business goal, test creative and offers, and use conversion data to decide what to change. For lead generation, I look at what happens after the form is submitted so campaign decisions can reflect lead quality.</p><a class="secondary" href="#portfolio">See selected work ↘</a></div></div></section>
 
-  <!-- Favicon & Mobile Touch Icons -->
-  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-  <link rel="apple-touch-icon" href="./assets/images/nived_final_portrait.png">
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://niveddigital.com/">
-  <meta property="og:title" content="Nived Digital — Performance Marketing Consultant in Kerala, India">
-  <meta property="og:description" content="Scale paid ad spend profitably with Meta Ads, Google Ads PMax, and high-converting funnels.">
-  <meta property="og:image" content="https://niveddigital.com/assets/images/project_meta_ads.jpg">
-  <meta property="og:site_name" content="Nived Digital">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://niveddigital.com/">
-  <meta name="twitter:title" content="Nived Digital — Performance Marketing Consultant">
-  <meta name="twitter:description" content="Data-driven Meta Ads and Google Ads consultant scaling DTC and service businesses.">
-  <meta name="twitter:image" content="https://niveddigital.com/assets/images/project_meta_ads.jpg">
-
-  <!-- EXACT GOOGLE FONT FROM DMIRSHA.COM: Manrope (400, 500, 600, 700, 800) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Main Stylesheet (dmirsha.com inspired design system) -->
-  <link rel="stylesheet" href="styles.css?v=6.0">
-
-  <!-- Schema.org JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://niveddigital.com/#website",
-        "url": "https://niveddigital.com/",
-        "name": "Nived Digital",
-        "description": "Performance Marketing and Paid Ads Consultant in Kerala, India",
-        "publisher": {
-          "@id": "https://niveddigital.com/#organization"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://niveddigital.com/#organization",
-        "name": "Nived Digital",
-        "url": "https://niveddigital.com/",
-        "logo": "https://niveddigital.com/assets/favicon.svg",
-        "image": "https://niveddigital.com/assets/images/nived_final_portrait.png",
-        "description": "Freelance performance marketing consultant specializing in Meta Ads, Google Ads PMax, Shopify development, and server-side tracking.",
-        "telephone": "+918590101541",
-        "founder": {
-          "@type": "Person",
-          "name": "Nived",
-          "jobTitle": "Performance Marketing & Paid Ads Consultant",
-          "sameAs": [
-            "https://www.instagram.com/nived.ads/"
-          ]
-        }
-      }
-    ]
+<section class="section" id="training"><div class="wrap split"><div><div class="eyebrow rule">Learning &amp; Experience</div><h2>My professional <strong>journey.</strong></h2></div><div class="timeline"><article class="card"><div class="eyebrow">DigitalX Academy · Kochi</div><h3>Digital Marketing Training</h3><p>Completed the three-month CDMS program.</p></article><article class="card"><div class="eyebrow">Agency &amp; E-commerce</div><h3>Performance Marketing</h3><p>Campaign planning, creative testing, conversion tracking, and reporting across client and e-commerce accounts.</p></article></div></div></section>
+<section class="section" id="services"><div class="wrap"><div class="eyebrow rule">What I Do</div><h2>Performance Marketing <strong>Services</strong></h2><div class="cards">
+<article class="card"><span class="eyebrow">Paid Social</span><h3>Meta Ads</h3><p>Facebook and Instagram campaigns with creative testing for leads, sales, and WhatsApp enquiries.</p></article>
+<article class="card"><span class="eyebrow">Paid Search</span><h3>Google Ads</h3><p>Search campaigns built around keyword intent, relevant landing pages, and conversion data.</p></article>
+<article class="card"><span class="eyebrow">Acquisition</span><h3>Lead Generation</h3><p>Instant forms, WhatsApp funnels, and CRM handoffs that help sales teams follow up.</p></article>
+<article class="card"><span class="eyebrow">E-commerce</span><h3>Shopify Development</h3><p>Shopify builds and theme customization, with attention to mobile speed, product pages, and checkout.</p></article>
+<article class="card"><span class="eyebrow">Measurement</span><h3>Conversion Tracking</h3><p>Pixel and tag setup, event validation, and reporting for the actions that matter.</p></article>
+<article class="card"><span class="eyebrow">Conversion</span><h3>Landing Page CRO</h3><p>Build and improve landing pages, from offer and page flow to the lead form and conversion events.</p></article>
+</div></div></section>
+<section class="section" id="portfolio"><div class="wrap">
+<div class="eyebrow rule">Portfolio</div><h2>Selected Work</h2>
+<article class="feature split"><div><div class="eyebrow">Featured Case Study · Onstara</div><h2>Scaling a streetwear store.</h2><p>Shopify store management, product page and checkout improvements, and Meta Ads support.</p><a class="secondary" href="https://onstara.in/">Visit Onstara ↗</a></div><div><div class="result">₹25–30L</div><p>Monthly store revenue reported in the Onstara case study.</p><a class="project-link" href="https://niveddigital.com/">Read the case study on Nived Digital ↗</a></div></article>
+<div class="carousel-tools" aria-label="Project carousel controls">
+<button type="button" id="project-prev" aria-label="Previous project" aria-controls="project-track">←</button>
+<button type="button" id="project-next" aria-label="Next project" aria-controls="project-track">→</button>
+</div>
+<div class="cards project-track" id="project-track" role="region" aria-label="Selected projects" tabindex="0">
+<article class="card"><span class="eyebrow">Web Development · UX</span><h3>Flyro Holidays</h3><p>Designed and built a travel website around trip discovery and direct consultation enquiries.</p><a class="project-link" href="https://flyroholidays.com/">Visit Flyro Holidays ↗</a></article>
+<article class="card"><span class="eyebrow">E-commerce · Paid Social</span><h3>Lexen</h3><p>My Shopify brand. I develop product offers and run Meta campaigns for website sales and WhatsApp enquiries.</p><a class="project-link" href="https://lexen.in/">Visit Lexen ↗</a></article>
+<article class="card"><span class="eyebrow">Education · Lead Generation</span><h3>Logic School of Management</h3><p>Lead generation campaigns for commerce admissions, webinars, and starter kits.</p><a class="project-link" href="https://www.logiceducation.org/">Visit Logic School of Management ↗</a></article>
+<article class="card"><span class="eyebrow">Webinar Acquisition</span><h3>Dream Life Abroad</h3><p>Webinar campaigns for nurses and IT professionals exploring Australian migration pathways.</p><a class="project-link" href="https://dreamlife-abroad.com/">Visit Dream Life Abroad ↗</a></article>
+</div></div></section>
+<section class="section" id="process"><div class="wrap"><div class="eyebrow rule">How I Work</div><h2>Audit, launch, improve.</h2><div class="cards"><article class="card"><h3>Audit</h3><p>Review the offer, store, tracking, and campaign history against your revenue or lead targets.</p></article><article class="card"><h3>Launch</h3><p>Set up conversion events, build campaigns and landing pages, and test creative against a clear goal.</p></article><article class="card"><h3>Improve</h3><p>Use sales and lead quality data to guide budget, creative, and page changes.</p></article></div></div></section>
+<section class="section" id="insights"><div class="wrap split"><div><div class="eyebrow rule">Performance Marketing Insights</div><h2>What happens <strong>after the click?</strong></h2></div><div><details open><summary>How do you judge lead quality?</summary><p>I look at contact rates, qualified enquiries, and sales feedback alongside cost per lead.</p></details><details><summary>Can you work with existing ad accounts?</summary><p>Yes. I can review existing campaigns, conversion events, creatives, and landing pages before planning changes.</p></details><details><summary>Do you work with businesses outside Kerala?</summary><p>Yes. Campaign planning, account management, and reporting can be handled remotely.</p></details></div></div></section>
+<section class="section band" id="contact"><div class="wrap"><div class="eyebrow">Let’s Connect</div><h2>Have a project in mind?<br><strong>Let’s talk.</strong></h2><p>Tell me what you’re selling, who you want to reach, and what you want your campaigns to achieve.</p><div class="actions"><a class="button" href="https://wa.me/918590101541">Chat on WhatsApp ↗</a><a class="secondary" href="mailto:hello@niveddigital.com">Email Me ↗</a></div></div></section></main>
+<footer><div class="wrap"><span>© 2026 Amal Nived</span><a href="#home">Back to top ↑</a></div></footer>
+<script>
+const menu = document.querySelector('.menu');
+const navigation = document.querySelector('nav');
+function setMenu(open) {
+  navigation.classList.toggle('open', open);
+  menu.setAttribute('aria-expanded', String(open));
+}
+menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+navigation.addEventListener('click', event => {
+  if (event.target.closest('a')) setMenu(false);
+});
+const socialToggle = document.querySelector('.social-toggle');
+const socialLinks = document.querySelector('#social-links');
+function setSocialOpen(open) {
+  socialLinks.hidden = !open;
+  socialToggle.setAttribute('aria-expanded', String(open));
+  socialToggle.setAttribute('aria-label', open ? 'Hide social links' : 'Show social links');
+  socialToggle.firstElementChild.textContent = open ? '→' : '←';
+}
+setSocialOpen(!window.matchMedia('(max-width: 580px)').matches);
+socialToggle.addEventListener('click', () => setSocialOpen(socialLinks.hidden));
+const track = document.querySelector('#project-track');
+const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let playing = !motion.matches;
+let visible = false;
+let hovering = false;
+const originals = Array.from(track.children);
+for (const card of originals) {
+  const clone = card.cloneNode(true);
+  clone.inert = true;
+  clone.setAttribute('aria-hidden', 'true');
+  track.append(clone);
+}
+function loopWidth() {
+  return track.children[originals.length].offsetLeft - originals[0].offsetLeft;
+}
+function moveProject(direction) {
+  const step = originals[1].offsetLeft - originals[0].offsetLeft;
+  const width = loopWidth();
+  track.scrollLeft = (track.scrollLeft + direction * step + width) % width;
+  position = track.scrollLeft;
+}
+document.querySelector('#project-prev').addEventListener('click', () => moveProject(-1));
+document.querySelector('#project-next').addEventListener('click', () => moveProject(1));
+motion.addEventListener('change', () => { playing = !motion.matches; });
+track.addEventListener('pointerenter', event => { hovering = event.pointerType === 'mouse'; });
+track.addEventListener('pointerleave', () => { hovering = false; });
+track.addEventListener('pointerdown', event => { if (event.pointerType === 'touch') { playing = false; } });
+new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, {threshold: 0.4}).observe(track);
+let position = track.scrollLeft;
+let rendered = track.scrollLeft;
+let lastFrame;
+const loopSpeed = 0.045;
+function glide(now) {
+  const elapsed = lastFrame === undefined ? 0 : Math.min(now - lastFrame, 40);
+  lastFrame = now;
+  if (playing && visible && !hovering && !document.hidden && !track.matches(':focus-within')) {
+    if (track.scrollLeft !== rendered) position = track.scrollLeft;
+    const width = loopWidth();
+    if (width > 0) {
+      position = (position + elapsed * loopSpeed) % width;
+      track.scrollLeft = position;
+      rendered = track.scrollLeft;
+    }
   }
-  </script>
-</head>
-<body class="dm-body">
-
-  <!-- Ambient Dark Green Glows (Signature dmirsha.com atmosphere) -->
-  <div class="dm-bg-ambient dm-bg-ambient-1"></div>
-  <div class="dm-bg-ambient dm-bg-ambient-2"></div>
-  <div class="dm-bg-ambient dm-bg-ambient-3"></div>
-
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header id="navbar" class="dm-nav-container">
-    <nav class="dm-nav-wrapper">
-      <!-- Brand Logo -->
-      <a href="#home" class="dm-logo" aria-label="Nived Digital Home">
-        <span class="dm-logo-icon">
-          <i class="fa-solid fa-chart-line"></i>
-        </span>
-        <div class="dm-logo-text">
-          <span class="dm-logo-title">NIVED<span>.</span></span>
-          <span class="dm-logo-sub">DIGITAL</span>
-        </div>
-      </a>
-
-      <!-- Desktop Nav Menu -->
-      <ul class="dm-nav-menu" id="navMenu">
-        <li><a href="#about" class="dm-nav-link">About</a></li>
-        <li><a href="#services" class="dm-nav-link">Services</a></li>
-        <li><a href="#credentials" class="dm-nav-link">Credentials</a></li>
-        <li><a href="#work" class="dm-nav-link">Case Studies</a></li>
-        <li><a href="#calculator" class="dm-nav-link">ROAS Tool</a></li>
-        <li><a href="#journey" class="dm-nav-link">Growth Blueprint</a></li>
-        <li><a href="#faq" class="dm-nav-link">FAQ</a></li>
-        
-        <!-- Mobile Drawer CTA (Hidden on desktop) -->
-        <li class="dm-mobile-drawer-cta">
-          <button type="button" class="dm-btn dm-btn-primary dm-btn-block trigger-modal-btn">
-            <span>Book Free Audit</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <a href="https://wa.me/918590101541?text=Hi%20Nived,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20scaling%20my%20ads" target="_blank" rel="noopener noreferrer" class="dm-btn dm-btn-wa dm-btn-block">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>Chat on WhatsApp</span>
-          </a>
-        </li>
-      </ul>
-
-      <!-- Nav Actions -->
-      <div class="dm-nav-actions">
-        <a href="https://wa.me/918590101541?text=Hi%20Nived,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20scaling%20my%20ads" target="_blank" rel="noopener noreferrer" class="dm-nav-wa-btn" title="Chat on WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
-          <span>WhatsApp</span>
-        </a>
-
-        <button type="button" class="dm-btn dm-btn-primary dm-btn-sm trigger-modal-btn desktop-only">
-          <span>Let's Talk</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuToggle" class="dm-mobile-toggle" aria-label="Toggle navigation menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- ==================== HERO SECTION (dm-hero-final style) ==================== -->
-    <section id="home" class="dm-hero-final">
-      <div class="dm-hero-final__inner">
-        
-        <!-- Left Content -->
-        <div class="dm-hero-final__content">
-          <p class="dm-hero-final__label">
-            <span class="dm-pulse-dot"></span>
-            Meta & Google Certified Performance Marketing Specialist
-          </p>
-
-          <p class="dm-hero-final__name">
-            Nived <span>Digital</span>
-          </p>
-
-          <h1 class="dm-hero-final__heading">
-            Performance Marketing Consultant in Kerala | India | UAE
-          </h1>
-
-          <p class="dm-hero-final__description">
-            Helping DTC brands and ambitious service companies scale profitable revenue through scientific Meta Ads, high-intent Google Ads (PMax), and data-backed conversion funnels. Turning wasted ad spend into predictable Customer Acquisition Cost (CAC) and maximum ROAS.
-          </p>
-
-          <div class="dm-hero-final__actions">
-            <button type="button" class="dm-hero-final__button trigger-modal-btn">
-              <span>Let's Work Together</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <a href="#work" class="dm-hero-final__about">
-              <span>Check My Portfolio</span>
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
-          </div>
-
-          <!-- Expertise Badges -->
-          <div class="dm-hero-final__expertise">
-            <span>Meta Ads Scaling</span>
-            <span>Google Ads PMax</span>
-            <span>Shopify Store CRO</span>
-            <span>Server-Side CAPI</span>
-          </div>
-
-          <!-- Trust Proof -->
-          <div class="dm-hero-proof">
-            <div class="dm-proof-stat">
-              <span class="dm-stat-num">₹30L+</span>
-              <span class="dm-stat-txt">Ad Revenue Scaled</span>
-            </div>
-            <div class="dm-proof-sep"></div>
-            <div class="dm-proof-stat">
-              <span class="dm-stat-num">4.8x</span>
-              <span class="dm-stat-txt">Peak Paid ROAS</span>
-            </div>
-            <div class="dm-proof-sep"></div>
-            <div class="dm-proof-stat">
-              <span class="dm-stat-num">100+</span>
-              <span class="dm-stat-txt">Campaigns Run</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Visual / Portrait (dmirsha.com layout with transparent PNG cutout) -->
-        <div class="dm-hero-final__visual">
-          <div class="dm-hero-final__glow"></div>
-          
-          <div class="dm-hero-final__image">
-            <img src="./assets/images/nived_final_portrait.png?v=4.0" alt="Nived - Performance Marketing & Paid Ads Consultant in Kerala" class="dm-photo-img" width="576" height="866" loading="eager">
-          </div>
-
-          <span class="dm-hero-final__location">CALICUT • KERALA • INDIA</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== BRANDS MARQUEE (dm-brands-section) ==================== -->
-    <section class="dm-brands-section" aria-label="Brands and Platforms">
-      <div class="dm-brands-heading">
-        <p class="dm-brands-eyebrow">PROVEN ACROSS CLIENT BRANDS & NETWORKS</p>
-        <h2 class="dm-brands-title">Brands I've Scaled & Performance Stack</h2>
-      </div>
-
-      <div class="dm-brands-viewport">
-        <div class="dm-brands-track">
-          <!-- Item 1: Yadasutra -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-spa"></i> Yadasutra Ayurveda</span>
-          </div>
-          <!-- Item 2: Compass Clinic -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-hospital-user"></i> Compass Clinic</span>
-          </div>
-          <!-- Item 3: GrowMax Club -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-chart-line-up"></i> GrowMax Club</span>
-          </div>
-          <!-- Item 4: Unimoni -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-building-columns"></i> Unimoni</span>
-          </div>
-          <!-- Item 5: Onstara -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-shirt"></i> Onstara DTC</span>
-          </div>
-          <!-- Item 6: Lexen -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill"><i class="fa-solid fa-cart-shopping"></i> Lexen E-Com</span>
-          </div>
-          <!-- Platforms -->
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-meta"></i> Meta Ads Manager</span>
-          </div>
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-google"></i> Google Ads & PMax</span>
-          </div>
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-shopify"></i> Shopify Plus CRO</span>
-          </div>
-          <div class="dm-brand-logo">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-solid fa-code"></i> Server-Side CAPI</span>
-          </div>
-
-          <!-- Seamless Marquee Duplicate -->
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-spa"></i> Yadasutra Ayurveda</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-hospital-user"></i> Compass Clinic</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-chart-line-up"></i> GrowMax Club</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-building-columns"></i> Unimoni</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-shirt"></i> Onstara DTC</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill"><i class="fa-solid fa-cart-shopping"></i> Lexen E-Com</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-meta"></i> Meta Ads Manager</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-google"></i> Google Ads & PMax</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-brands fa-shopify"></i> Shopify Plus CRO</span>
-          </div>
-          <div class="dm-brand-logo" aria-hidden="true">
-            <span class="dm-brand-pill dm-pill-tech"><i class="fa-solid fa-code"></i> Server-Side CAPI</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== ABOUT & PHILOSOPHY (dm-about style) ==================== -->
-    <section id="about" class="dm-about-section">
-      <div class="dm-container">
-        
-        <div class="dm-section-head">
-          <p class="dm-eyebrow">DIGITAL THINKING. MEANINGFUL GROWTH.</p>
-          <h2 class="dm-title">Engineered For Predictable Return On Ad Spend.</h2>
-          <p class="dm-desc">
-            Most ad agencies burn client budgets on vanity clicks and untracked impressions. I manage paid ad spend like a quantitative investment fund — focused exclusively on Customer Acquisition Cost (CAC), Contribution Margin, and cash-in-bank profitability.
-          </p>
-        </div>
-
-        <!-- 3-Column Highlights Grid -->
-        <div class="dm-about-grid">
-          
-          <div class="dm-about-card">
-            <div class="dm-about-num">01</div>
-            <h3 class="dm-about-title">Ad Creative Hook Engine</h3>
-            <p class="dm-about-text">
-              In post-iOS14 advertising, creative is your primary targeting lever. We test 15+ rapid hook angles weekly (3-second visual thumbstops, UGC storytelling, pain-point callouts) inside isolated ABO sandboxes to uncover winning ad creatives.
-            </p>
-            <div class="dm-about-tag">Creative Testing Machine</div>
-          </div>
-
-          <div class="dm-about-card dm-about-card-featured">
-            <div class="dm-about-num text-green">02</div>
-            <h3 class="dm-about-title">Zero Attribution Blindspots</h3>
-            <p class="dm-about-text">
-              Privacy updates and browser ad-blockers can lose up to 35% of purchase signals. I deploy Meta Conversions API (CAPI) and Google Tag Manager server containers to secure 9.0+ Event Match Quality and feed real conversion data back to ad algorithms.
-            </p>
-            <div class="dm-about-tag">100% Server CAPI & GA4</div>
-          </div>
-
-          <div class="dm-about-card">
-            <div class="dm-about-num">03</div>
-            <h3 class="dm-about-title">Full-Funnel CRO Architecture</h3>
-            <p class="dm-about-text">
-              Sending expensive paid traffic to an unoptimized page wastes capital. Alongside paid media buying, I optimize direct-response funnels and custom Shopify storefronts with 1-click upsells and frictionless checkouts to double conversion rates.
-            </p>
-            <div class="dm-about-tag">Shopify & Funnel CRO</div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== SERVICES SECTION (dm-services style) ==================== -->
-    <section id="services" class="dm-services">
-      <div class="dm-services-inner">
-        
-        <div class="dm-services-header">
-          <p class="dm-services-eyebrow">WHAT I DELIVER</p>
-          <h2 class="dm-services-title">Performance Marketing Services</h2>
-          <p class="dm-services-sub">
-            Full-stack paid acquisition and conversion optimization engineered to scale revenue and build defensible market share.
-          </p>
-        </div>
-
-        <div class="dm-services-grid">
-          
-          <!-- Service 1 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">01</span>
-              <div class="dm-service-icon"><i class="fa-brands fa-meta"></i></div>
-            </div>
-            <h3 class="dm-service-name">Meta Ads (Facebook & IG) Scaling</h3>
-            <p class="dm-service-description">
-              Full-funnel Meta campaign management built on CBO/ABO testing structures, broad targeting AI, Advantage+ shopping campaigns, and dynamic retargeting that scales budgets without ROAS collapse.
-            </p>
-            <div class="dm-service-tags">
-              <span>Dynamic Creative</span>
-              <span>Lookalike Audiences</span>
-              <span>Cost-Cap Scaling</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Meta Ads Scaling">
-              <span>Scale Meta Ads</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">02</span>
-              <div class="dm-service-icon"><i class="fa-brands fa-google"></i></div>
-            </div>
-            <h3 class="dm-service-name">Google Ads & Performance Max (PMax)</h3>
-            <p class="dm-service-description">
-              Capture ready-to-buy customers searching for your products and services. High-intent Google Search, Performance Max feed optimization, YouTube Video, and negative keyword moats.
-            </p>
-            <div class="dm-service-tags">
-              <span>Commercial Keywords</span>
-              <span>PMax Shopping Feed</span>
-              <span>Brand Defense</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Google Ads & PMax">
-              <span>Scale Google Ads</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">03</span>
-              <div class="dm-service-icon"><i class="fa-brands fa-shopify"></i></div>
-            </div>
-            <h3 class="dm-service-name">Website & Shopify Store Development</h3>
-            <p class="dm-service-description">
-              Custom-built, blisteringly fast e-commerce stores and dedicated direct-response landing pages crafted to convert cold paid ad visitors into high-AOV repeat buyers.
-            </p>
-            <div class="dm-service-tags">
-              <span>Core Web Vitals</span>
-              <span>1-Click Upsells</span>
-              <span>Mobile-First UI/UX</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Shopify Store Development">
-              <span>Build Fast Store</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">04</span>
-              <div class="dm-service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-            </div>
-            <h3 class="dm-service-name">Ad Creative & Hook Frameworks</h3>
-            <p class="dm-service-description">
-              Direct-response creative briefs, UGC script templates, emotional angle variations, and scroll-stopping hooks designed to stop thumbs in the first 2 seconds and drop CPCs.
-            </p>
-            <div class="dm-service-tags">
-              <span>3-Second Hooks</span>
-              <span>Angle Testing</span>
-              <span>Fatigue Prevention</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Creative & Hook Strategy">
-              <span>Craft Ad Creatives</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Service 5 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">05</span>
-              <div class="dm-service-icon"><i class="fa-solid fa-filter-circle-dollar"></i></div>
-            </div>
-            <h3 class="dm-service-name">Landing Page & Funnel CRO</h3>
-            <p class="dm-service-description">
-              Auditing user session heatmaps, eliminating checkout friction points, testing above-the-fold value propositions, and implementing frictionless WhatsApp & call funnels.
-            </p>
-            <div class="dm-service-tags">
-              <span>Heatmap Analysis</span>
-              <span>A/B Headline Testing</span>
-              <span>Form Optimization</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Funnel CRO">
-              <span>Double Conversion Rate</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Service 6 -->
-          <div class="dm-service-card">
-            <div class="dm-service-top">
-              <span class="dm-service-num">06</span>
-              <div class="dm-service-icon"><i class="fa-solid fa-network-wired"></i></div>
-            </div>
-            <h3 class="dm-service-name">Server-Side Attribution & GA4 / CAPI</h3>
-            <p class="dm-service-description">
-              Enterprise server-side attribution infrastructure. Meta Conversions API (CAPI) gateway setup, Google Tag Manager server containers, and GA4 e-commerce custom event tracking.
-            </p>
-            <div class="dm-service-tags">
-              <span>Meta CAPI Gateway</span>
-              <span>EMQ 9.0+ Score</span>
-              <span>GA4 E-Commerce</span>
-            </div>
-            <button type="button" class="dm-service-link trigger-modal-btn" data-service="Server-Side CAPI Setup">
-              <span>Setup Attribution</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== CERTIFICATIONS & CREDENTIALS (dm-cert style) ==================== -->
-    <section id="credentials" class="dm-cert-slider">
-      <div class="dm-cert-heading">
-        <p class="dm-cert-eyebrow">VERIFIED EXPERTISE</p>
-        <h2 class="dm-cert-title">Certifications & Professional Credentials</h2>
-      </div>
-
-      <div class="dm-cert-viewport">
-        <div class="dm-cert-track">
-          
-          <!-- Cert 1 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-brands fa-meta"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">Meta Certified</span>
-              <h3 class="dm-cert-name">Media Buying Professional</h3>
-              <p class="dm-cert-desc">Certified in advanced audience targeting, CBO/ABO budget structures, and Advantage+ scaling.</p>
-            </div>
-          </div>
-
-          <!-- Cert 2 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-brands fa-google"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">Google Skillshop</span>
-              <h3 class="dm-cert-name">Google Ads Search Certification</h3>
-              <p class="dm-cert-desc">Certified in high-intent commercial keyword optimization and automated bidding algorithms.</p>
-            </div>
-          </div>
-
-          <!-- Cert 3 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-solid fa-chart-simple"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">Google Analytics</span>
-              <h3 class="dm-cert-name">Google Analytics 4 (GA4) Expert</h3>
-              <p class="dm-cert-desc">Certified in e-commerce event attribution, cross-platform funnels, and data reporting.</p>
-            </div>
-          </div>
-
-          <!-- Cert 4 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-brands fa-shopify"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">Shopify Partner</span>
-              <h3 class="dm-cert-name">Shopify Store Development & CRO</h3>
-              <p class="dm-cert-desc">Official Shopify partner building high-converting themes and optimized mobile checkouts.</p>
-            </div>
-          </div>
-
-          <!-- Cert 5 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-solid fa-server"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">Meta Technical</span>
-              <h3 class="dm-cert-name">Conversions API (CAPI) Specialist</h3>
-              <p class="dm-cert-desc">Specialized in GTM server containers, event deduplication, and high Event Match Quality.</p>
-            </div>
-          </div>
-
-          <!-- Cert 6 -->
-          <div class="dm-cert-card">
-            <div class="dm-cert-badge-icon"><i class="fa-brands fa-hubspot"></i></div>
-            <div class="dm-cert-info">
-              <span class="dm-cert-issuer">HubSpot Academy</span>
-              <h3 class="dm-cert-name">Inbound & Digital Strategy Certified</h3>
-              <p class="dm-cert-desc">Certified in full-funnel customer acquisition, lead qualification, and nurturing flows.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SELECTED WORK / SWIPEABLE CAROUSEL ==================== -->
-    <section id="work" class="dm-work-section">
-      <div class="dm-container">
-        
-        <div class="dm-section-head">
-          <p class="dm-eyebrow">PORTFOLIO & PROVEN RESULTS</p>
-          <h2 class="dm-title">Selected Client Case Studies</h2>
-          <p class="dm-desc">
-            Real campaign executions delivering measurable customer acquisition, qualified lead pipelines, and profitable e-commerce revenue.
-          </p>
-        </div>
-
-        <!-- Filter Controls -->
-        <div class="dm-filter-bar">
-          <button type="button" class="dm-filter-tab active" data-filter="all">All Engagements</button>
-          <button type="button" class="dm-filter-tab" data-filter="leadgen">Lead Generation</button>
-          <button type="button" class="dm-filter-tab" data-filter="ecommerce">E-Commerce Sales</button>
-          <button type="button" class="dm-filter-tab" data-filter="shopify">Shopify Dev</button>
-        </div>
-
-        <!-- SWIPEABLE CAROUSEL CONTAINER -->
-        <div class="portfolio-slider-wrapper">
-          <!-- Swipe Track -->
-          <div class="portfolio-slider-track" id="portfolioSliderTrack">
-            
-            <!-- Case Study 1: Yadasutra Ayurveda -->
-            <article class="project-card" data-category="leadgen" data-case="yadasutra">
-              <div class="project-media">
-                <img src="./client-0.jpg" alt="Yadasutra Ayurveda Campaign Results" class="project-img" loading="lazy">
-                <div class="project-badge-float">Lead Generation</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="0">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">Yadasutra Ayurveda</span>
-                  <span class="project-metric text-green"><i class="fa-solid fa-arrow-down"></i> -42% CPL</span>
-                </div>
-                <h3 class="project-title">High-Ticket Ayurvedic Wellness Lead Acquisition</h3>
-                <p class="project-summary">
-                  Executed hyper-targeted Meta ad campaigns with symptom-based emotional hook angles, generating steady qualified consultation bookings while slashing Cost Per Lead.
-                </p>
-                <div class="project-tags">
-                  <span>Meta Ads</span>
-                  <span>Lead Gen</span>
-                  <span>WhatsApp Flow</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="0">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Case Study 2: Compass Clinic -->
-            <article class="project-card" data-category="leadgen" data-case="compass">
-              <div class="project-media">
-                <img src="./client-1.jpg" alt="Compass Clinic Healthcare Patient Acquisition" class="project-img" loading="lazy">
-                <div class="project-badge-float">Healthcare Lead Gen</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="1">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">Compass Clinic</span>
-                  <span class="project-metric text-green"><i class="fa-solid fa-arrow-up"></i> +180% Bookings</span>
-                </div>
-                <h3 class="project-title">Patient Appointment Generation for Specialty Clinic</h3>
-                <p class="project-summary">
-                  Structured localized radius targeting and high-intent Google Search campaigns that connected patients with clinic specialists within minutes of searching.
-                </p>
-                <div class="project-tags">
-                  <span>Google Ads</span>
-                  <span>Meta Retargeting</span>
-                  <span>Local Search</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="1">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Case Study 3: GrowMax Club -->
-            <article class="project-card" data-category="leadgen" data-case="growmax">
-              <div class="project-media">
-                <img src="./client-2.jpg" alt="GrowMax Club Member Acquisition" class="project-img" loading="lazy">
-                <div class="project-badge-float">Community Scaling</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="2">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">GrowMax Club</span>
-                  <span class="project-metric text-green">3.9x Pipeline ROAS</span>
-                </div>
-                <h3 class="project-title">Investor & High-Intent Membership Funnel</h3>
-                <p class="project-summary">
-                  Deployed video-first prospecting ad sets and qualified lead qualification surveys to drive premium membership subscriptions with low drop-off rates.
-                </p>
-                <div class="project-tags">
-                  <span>Meta Video Ads</span>
-                  <span>Funnel CRO</span>
-                  <span>Survey Forms</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="2">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Case Study 4: Unimoni -->
-            <article class="project-card" data-category="leadgen" data-case="unimoni">
-              <div class="project-media">
-                <img src="./client-3.jpg" alt="Unimoni Financial Services Campaigns" class="project-img" loading="lazy">
-                <div class="project-badge-float">Financial Services</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="3">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">Unimoni</span>
-                  <span class="project-metric text-green">Enterprise Approved</span>
-                </div>
-                <h3 class="project-title">High-Volume Regulated Financial Lead Pipeline</h3>
-                <p class="project-summary">
-                  Optimized enterprise-level lead generation campaigns adhering to strict financial advertising guidelines while maintaining high lead-to-call conversion.
-                </p>
-                <div class="project-tags">
-                  <span>Enterprise Ads</span>
-                  <span>Google Search</span>
-                  <span>High-Trust Copy</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="3">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Case Study 5: Onstara Online Store -->
-            <article class="project-card" data-category="ecommerce" data-case="onstara">
-              <div class="project-media">
-                <img src="./client-4.jpg" alt="Onstara E-commerce Store Revenue Scale" class="project-img" loading="lazy">
-                <div class="project-badge-float">E-Commerce DTC</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="4">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">Onstara</span>
-                  <span class="project-metric text-green font-mono">4.5x ROAS</span>
-                </div>
-                <h3 class="project-title">DTC Fashion Store Scaling & Dynamic Product Ads</h3>
-                <p class="project-summary">
-                  Scaled online fashion purchases with Advantage+ catalog ads, UGC-style creative variations, and cart abandonment retargeting sequences.
-                </p>
-                <div class="project-tags">
-                  <span>Advantage+ Catalog</span>
-                  <span>Meta Ads</span>
-                  <span>ROAS Scaling</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="4">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Case Study 6: Lexen -->
-            <article class="project-card" data-category="shopify" data-case="lexen">
-              <div class="project-media">
-                <img src="./client-5.jpg" alt="Lexen Shopify Store Development & E-commerce Scaling" class="project-img" loading="lazy">
-                <div class="project-badge-float">Shopify & Scale</div>
-                <div class="project-overlay">
-                  <button type="button" class="btn btn-sm btn-glass view-case-btn" data-project="5">
-                    <i class="fa-solid fa-eye"></i> View Breakdown
-                  </button>
-                </div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="client-name">Lexen</span>
-                  <span class="project-metric text-green font-mono">Full Stack Launch</span>
-                </div>
-                <h3 class="project-title">Custom Shopify Architecture & Paid Media Launch</h3>
-                <p class="project-summary">
-                  Designed and coded a blazing fast custom Shopify storefront, paired with comprehensive paid acquisition and social media strategy from zero to consistent daily revenue.
-                </p>
-                <div class="project-tags">
-                  <span>Shopify Dev</span>
-                  <span>Meta Ads</span>
-                  <span>Store CRO</span>
-                </div>
-                <div class="project-card-footer">
-                  <button type="button" class="project-breakdown-link view-case-btn" data-project="5">
-                    <span>View Case Breakdown</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-          </div> <!-- End .portfolio-slider-track -->
-
-          <!-- Slider Controls -->
-          <div class="slider-controls-bar">
-            <button type="button" class="slider-arrow-btn slider-prev" id="sliderPrevBtn" aria-label="Previous case study">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-
-            <div class="slider-pagination-dots" id="sliderPaginationDots"></div>
-
-            <div class="slider-counter-badge" id="sliderCounterBadge">
-              <span id="currentSlideNum">1</span><span class="counter-sep">/</span><span id="totalSlidesNum">6</span>
-            </div>
-
-            <button type="button" class="slider-arrow-btn slider-next" id="sliderNextBtn" aria-label="Next case study">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- Mobile Swipe Hint -->
-          <div class="slider-swipe-hint">
-            <i class="fa-solid fa-hand-pointer"></i>
-            <span>Swipe left or right to explore all 6 client brands</span>
-            <i class="fa-solid fa-arrow-right-long"></i>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== ROAS & REVENUE CALCULATOR ==================== -->
-    <section id="calculator" class="dm-calc-section">
-      <div class="dm-container">
-        
-        <div class="dm-calc-card">
-          <div class="dm-calc-header">
-            <div>
-              <p class="dm-eyebrow">INTERACTIVE MODEL</p>
-              <h2 class="dm-calc-title">Project Your ROAS & Revenue Scale</h2>
-              <p class="dm-calc-sub">Adjust your monthly ad budget and average order value to model your estimated returns under Nived's paid media management.</p>
-            </div>
-            <div class="dm-live-badge">
-              <span class="dm-pulse-dot"></span> Live Engine
-            </div>
-          </div>
-
-          <div class="dm-calc-grid">
-            <!-- Controls -->
-            <div class="dm-calc-inputs">
-              
-              <div class="dm-input-group">
-                <div class="dm-label-row">
-                  <label for="budgetSlider">Monthly Ad Spend Budget (₹)</label>
-                  <span id="budgetValue" class="dm-val font-mono">₹1,00,000</span>
-                </div>
-                <input type="range" id="budgetSlider" min="25000" max="1000000" step="5000" value="100000" class="dm-slider" aria-label="Monthly ad budget slider">
-                <div class="dm-ticks">
-                  <span>₹25k</span>
-                  <span>₹2.5L</span>
-                  <span>₹5L</span>
-                  <span>₹10L</span>
-                </div>
-              </div>
-
-              <div class="dm-input-group">
-                <div class="dm-label-row">
-                  <label for="aovSlider">Average Order Value (AOV / Ticket ₹)</label>
-                  <span id="aovValue" class="dm-val font-mono">₹1,500</span>
-                </div>
-                <input type="range" id="aovSlider" min="500" max="15000" step="250" value="1500" class="dm-slider" aria-label="Average order value slider">
-                <div class="dm-ticks">
-                  <span>₹500</span>
-                  <span>₹3,000</span>
-                  <span>₹7,500</span>
-                  <span>₹15k+</span>
-                </div>
-              </div>
-
-              <div class="dm-input-group">
-                <label class="dm-field-label">Target Industry / Goal</label>
-                <div class="dm-radio-group">
-                  <label class="dm-radio-item">
-                    <input type="radio" name="calcGoal" value="ecommerce" checked>
-                    <span>E-Commerce DTC (ROAS Focus)</span>
-                  </label>
-                  <label class="dm-radio-item">
-                    <input type="radio" name="calcGoal" value="leadgen">
-                    <span>High-Ticket Lead Gen (CPL Focus)</span>
-                  </label>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Output Box -->
-            <div class="dm-calc-output">
-              <p class="dm-output-label">ESTIMATED MONTHLY RESULTS</p>
-              
-              <div class="dm-revenue-highlight">
-                <span class="dm-rev-lbl">Projected Scaled Revenue</span>
-                <span id="projectedRevenue" class="dm-rev-num font-mono">₹4,20,000</span>
-                <span class="dm-rev-sub">Estimated Gross Revenue Generated</span>
-              </div>
-
-              <div class="dm-metrics-row">
-                <div class="dm-metric-box">
-                  <span class="dm-m-label">Target ROAS</span>
-                  <span id="projectedRoas" class="dm-m-val text-green font-mono">4.20x</span>
-                </div>
-                <div class="dm-metric-box">
-                  <span class="dm-m-label">Est. Orders/Leads</span>
-                  <span id="projectedOrders" class="dm-m-val font-mono">280</span>
-                </div>
-                <div class="dm-metric-box">
-                  <span class="dm-m-label">Est. Blended CAC</span>
-                  <span id="projectedCac" class="dm-m-val font-mono">₹357</span>
-                </div>
-              </div>
-
-              <button type="button" class="dm-btn dm-btn-primary dm-btn-block trigger-modal-with-data">
-                <span>Lock In This Scaling Plan</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== GROWTH BLUEPRINT (dm-journey style) ==================== -->
-    <section id="journey" class="dm-journey">
-      <div class="dm-journey-head">
-        <p class="dm-journey-kicker">SYSTEMATIC METHODOLOGY</p>
-        <h2 class="dm-journey-heading">The 4-Step Paid Media Growth Blueprint</h2>
-        <p class="dm-journey-sub">
-          A repeatable, scientific protocol designed to audit leaks, test high-velocity creative hooks, integrate server-side tracking, and aggressively scale ad spend.
-        </p>
-      </div>
-
-      <div class="dm-journey-timeline">
-        <div class="dm-journey-progress"></div>
-
-        <!-- Step 1 -->
-        <div class="dm-journey-card">
-          <div class="dm-journey-center">
-            <span class="dm-journey-num font-mono">01</span>
-          </div>
-          <div class="dm-journey-body">
-            <span class="dm-journey-phase">Phase 1: Deep Diagnostic</span>
-            <h3 class="dm-journey-role">Meta & Google Ads Leak Audit</h3>
-            <p class="dm-journey-desc">
-              Comprehensive historical audit analyzing wasted ad spend, negative audience overlaps, auction saturation, ad fatigue curves, and checkout friction. We uncover quick-win opportunities to save cash within the first 48 hours.
-            </p>
-            <div class="dm-journey-bullets">
-              <span><i class="fa-solid fa-check text-green"></i> Attribution drop-off check</span>
-              <span><i class="fa-solid fa-check text-green"></i> Budget cannibalization review</span>
-              <span><i class="fa-solid fa-check text-green"></i> Competitor angle intelligence</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="dm-journey-card">
-          <div class="dm-journey-center">
-            <span class="dm-journey-num font-mono">02</span>
-          </div>
-          <div class="dm-journey-body">
-            <span class="dm-journey-phase">Phase 2: Angle & Creative Testing</span>
-            <h3 class="dm-journey-role">Creative Hook Testing Machine</h3>
-            <p class="dm-journey-desc">
-              Creative is the new targeting. We produce and test structured matrix batches with varying 3-second visual hooks, pain-point callouts, UGC formats, and carousel formats inside isolated ABO sandbox ad sets to isolate winners.
-            </p>
-            <div class="dm-journey-bullets">
-              <span><i class="fa-solid fa-check text-green"></i> Dynamic creative iteration</span>
-              <span><i class="fa-solid fa-check text-green"></i> Thumb-stop rate analysis</span>
-              <span><i class="fa-solid fa-check text-green"></i> Statistically valid winner detection</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="dm-journey-card">
-          <div class="dm-journey-center">
-            <span class="dm-journey-num font-mono">03</span>
-          </div>
-          <div class="dm-journey-body">
-            <span class="dm-journey-phase">Phase 3: Technical Foundation</span>
-            <h3 class="dm-journey-role">Funnel CRO & CAPI Server Attribution</h3>
-            <p class="dm-journey-desc">
-              We plug data leakage with Meta Conversions API (CAPI) and GA4 server tracking, while simultaneously removing mobile checkout friction to ensure incoming paid traffic converts at industry-beating percentages.
-            </p>
-            <div class="dm-journey-bullets">
-              <span><i class="fa-solid fa-check text-green"></i> Server-side GTM containers</span>
-              <span><i class="fa-solid fa-check text-green"></i> 1-click checkout flow tuning</span>
-              <span><i class="fa-solid fa-check text-green"></i> Mobile UX optimization</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="dm-journey-card">
-          <div class="dm-journey-center">
-            <span class="dm-journey-num font-mono">04</span>
-          </div>
-          <div class="dm-journey-body">
-            <span class="dm-journey-phase">Phase 4: Predictable Expansion</span>
-            <h3 class="dm-journey-role">Horizontal & Vertical Budget Scaling</h3>
-            <p class="dm-journey-desc">
-              With verified creative winners and rock-solid tracking, we scale daily ad spend aggressively via Cost-Cap bidding, CBO scaling campaigns, and omnichannel Google PMax reinforcement without destabilizing your target ROAS.
-            </p>
-            <div class="dm-journey-bullets">
-              <span><i class="fa-solid fa-check text-green"></i> Cost-Cap and Bid-Cap safety nets</span>
-              <span><i class="fa-solid fa-check text-green"></i> Omnichannel retargeting</span>
-              <span><i class="fa-solid fa-check text-green"></i> Sustained blended profitability</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== CLIENT REVIEWS ==================== -->
-    <section class="dm-reviews-section">
-      <div class="dm-container">
-        <div class="dm-section-head">
-          <p class="dm-eyebrow">VERIFIED CLIENT RESULTS</p>
-          <h2 class="dm-title">What Founders & Directors Say</h2>
-        </div>
-
-        <div class="dm-reviews-grid">
-          
-          <div class="dm-review-card">
-            <div class="dm-review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="dm-review-quote">
-              "Nived completely restructured our Meta ad campaigns. Our ROAS went from <strong>1.8x to over 4.5x</strong> in less than 60 days while doubling our monthly sales! His creative hook framework is phenomenal."
-            </p>
-            <div class="dm-reviewer">
-              <div class="dm-rev-avatar"><i class="fa-solid fa-user-tie"></i></div>
-              <div>
-                <span class="dm-rev-name">Founder & CEO</span>
-                <span class="dm-rev-brand">DTC Skincare Brand • Dubai, UAE</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="dm-review-card dm-review-card-featured">
-            <div class="dm-review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="dm-review-quote">
-              "Finding a Meta & Google Ads specialist who truly understands <strong>creative hooks, attribution, and landing page CRO</strong> is rare. Nived delivers exceptional results and treats our ad spend like his own money."
-            </p>
-            <div class="dm-reviewer">
-              <div class="dm-rev-avatar"><i class="fa-solid fa-chart-line"></i></div>
-              <div>
-                <span class="dm-rev-name">E-Commerce Director</span>
-                <span class="dm-rev-brand">Retail Goods • Riyadh, Saudi Arabia</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="dm-review-card">
-            <div class="dm-review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="dm-review-quote">
-              "Nived's Google Ads PMax setup and Meta retargeting strategy <strong>cut our CAC by 35%</strong> within the first month alone. He also helped optimize our store checkout which immediately boosted our conversion rate!"
-            </p>
-            <div class="dm-reviewer">
-              <div class="dm-rev-avatar"><i class="fa-solid fa-shirt"></i></div>
-              <div>
-                <span class="dm-rev-name">Apparel Brand Founder</span>
-                <span class="dm-rev-brand">Streetwear DTC • Mumbai, India</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== FAQ SECTION (dm-faq-final style) ==================== -->
-    <section id="faq" class="dm-faq-final">
-      <div class="dm-faq-final__container">
-        
-        <div class="dm-faq-final__intro">
-          <p class="dm-eyebrow">COMMON QUESTIONS</p>
-          <h2 class="dm-title">Frequently Asked Questions</h2>
-          <p class="dm-desc">Everything you need to know about scaling your brand with Nived Digital.</p>
-        </div>
-
-        <div class="dm-faq-final__accordion" id="faqAccordion">
-          
-          <!-- FAQ 01 -->
-          <div class="dm-faq-final__item">
-            <button type="button" class="dm-faq-final__question" aria-expanded="false">
-              <span>01 What services does Nived Digital deliver for businesses?</span>
-              <span class="dm-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <div class="dm-faq-final__answer">
-              <p>Nived Digital delivers full-funnel Meta Ads management (Facebook & Instagram), high-intent Google Ads (Search & Performance Max), custom Shopify store theme development, landing page CRO, and server-side Conversions API (CAPI) attribution tracking engineered to lower CAC and scale revenue.</p>
-            </div>
-          </div>
-
-          <!-- FAQ 02 -->
-          <div class="dm-faq-final__item">
-            <button type="button" class="dm-faq-final__question" aria-expanded="false">
-              <span>02 What kind of ROAS and performance results can I realistically expect?</span>
-              <span class="dm-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <div class="dm-faq-final__answer">
-              <p>Depending on your current baseline, offer positioning, and average order value (AOV), our campaigns typically generate between <strong>3.5x and 5.2x ROAS</strong> with an average 35% to 45% reduction in blended customer acquisition cost within 60 to 90 days of implementation.</p>
-            </div>
-          </div>
-
-          <!-- FAQ 03 -->
-          <div class="dm-faq-final__item">
-            <button type="button" class="dm-faq-final__question" aria-expanded="false">
-              <span>03 Which geographic markets do you actively manage ad spend in?</span>
-              <span class="dm-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <div class="dm-faq-final__answer">
-              <p>We actively manage and scale ad campaigns for businesses across India (Kerala, Mumbai, Bengaluru, Delhi NCR), UAE (Dubai, Abu Dhabi), Saudi Arabia (Riyadh, Jeddah), Qatar, Kuwait, and global international markets.</p>
-            </div>
-          </div>
-
-          <!-- FAQ 04 -->
-          <div class="dm-faq-final__item">
-            <button type="button" class="dm-faq-final__question" aria-expanded="false">
-              <span>04 How do you solve iOS 14.5+ tracking losses and attribution drops?</span>
-              <span class="dm-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <div class="dm-faq-final__answer">
-              <p>We configure server-side tracking via Meta Conversions API (CAPI), Google Tag Manager server container, and GA4 e-commerce events. This restores accurate event attribution, improves Meta's Event Match Quality score (EMQ 9.0+), and enables AI algorithms to optimize for actual high-value purchasers.</p>
-            </div>
-          </div>
-
-          <!-- FAQ 05 -->
-          <div class="dm-faq-final__item">
-            <button type="button" class="dm-faq-final__question" aria-expanded="false">
-              <span>05 What is included in the free Strategy Call and Ad Account Audit?</span>
-              <span class="dm-faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <div class="dm-faq-final__answer">
-              <p>Our free 1-on-1 audit is a deep dive into your existing Meta or Google ad accounts. We uncover wasted ad spend, creative fatigue, audience overlaps, tracking drop-offs, and post-click funnel friction — giving you an actionable scaling blueprint with zero obligation.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== FINAL CTA (dm-final-cta style) ==================== -->
-    <section class="dm-final-cta">
-      <div class="dm-final-cta__light"></div>
-      
-      <div class="dm-final-cta__shell">
-        <div class="dm-final-cta__content">
-          <p class="dm-eyebrow">TAKE THE NEXT STEP</p>
-          
-          <h2 class="dm-final-cta__title">
-            Ready to Scale Your Ad Campaigns <span>Profitably?</span>
-          </h2>
-          
-          <p class="dm-final-cta__desc">
-            Book a complimentary 1-on-1 strategy audit call. I’ll review your ad accounts, highlight where ad budget is leaking, and give you an exact roadmap to scale profitably.
-          </p>
-
-          <div class="dm-final-cta__actions">
-            <button type="button" class="dm-btn dm-btn-primary dm-btn-lg trigger-modal-btn">
-              <span>Book Free Strategy Audit</span>
-              <i class="fa-solid fa-calendar-check"></i>
-            </button>
-            <a href="https://wa.me/918590101541?text=Hi%20Nived,%20I'd%20like%20to%20discuss%20scaling%20my%20paid%20ads" target="_blank" rel="noopener noreferrer" class="dm-btn dm-btn-wa dm-btn-lg">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Instant Chat on WhatsApp</span>
-            </a>
-          </div>
-
-          <!-- Direct Contacts -->
-          <div class="dm-contact-pills">
-            <div class="dm-cpill">
-              <i class="fa-solid fa-phone text-green"></i>
-              <a href="tel:+918590101541">+91 85901 01541</a>
-            </div>
-            <div class="dm-cpill">
-              <i class="fa-solid fa-envelope text-green"></i>
-              <a href="mailto:contact@niveddigital.com">contact@niveddigital.com</a>
-              <button type="button" class="copy-email-btn" title="Copy email" aria-label="Copy email">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="dm-cpill">
-              <i class="fa-brands fa-instagram text-green"></i>
-              <a href="https://www.instagram.com/nived.ads/" target="_blank" rel="noopener noreferrer">@nived.ads</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ==================== FOOTER (dm-footer style) ==================== -->
-  <footer class="dm-footer">
-    <div class="dm-footer__container">
-      <div class="dm-footer__grid">
-        
-        <!-- Brand Info -->
-        <div class="dm-footer__column">
-          <a href="#home" class="dm-logo dm-footer-logo">
-            <span class="dm-logo-icon"><i class="fa-solid fa-chart-line"></i></span>
-            <div class="dm-logo-text">
-              <span class="dm-logo-title">NIVED<span>.</span></span>
-              <span class="dm-logo-sub">DIGITAL</span>
-            </div>
-          </a>
-          <p class="dm-footer__bio">
-            Freelance Performance Marketing & Paid Acquisition Specialist helping ambitious brands scale profitably with Meta Ads & Google Ads.
-          </p>
-          <div class="dm-footer__socials">
-            <a href="https://www.instagram.com/nived.ads/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/918590101541" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:contact@niveddigital.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+918590101541" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
-          </div>
-        </div>
-
-        <!-- Services Links -->
-        <div class="dm-footer__column">
-          <h4 class="dm-footer__heading">Services</h4>
-          <ul class="dm-footer__links">
-            <li><a href="#services">Meta Ads Scaling</a></li>
-            <li><a href="#services">Google Ads & PMax</a></li>
-            <li><a href="#services">Shopify Store Development</a></li>
-            <li><a href="#services">Creative & Hook Strategy</a></li>
-            <li><a href="#services">Landing Page CRO</a></li>
-            <li><a href="#services">Server-Side CAPI Setup</a></li>
-          </ul>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="dm-footer__column">
-          <h4 class="dm-footer__heading">Quick Links</h4>
-          <ul class="dm-footer__links">
-            <li><a href="#about">About Nived</a></li>
-            <li><a href="#credentials">Certifications</a></li>
-            <li><a href="#work">Case Studies</a></li>
-            <li><a href="#calculator">ROAS Calculator</a></li>
-            <li><a href="#journey">Growth Blueprint</a></li>
-            <li><a href="#faq">Frequently Asked Questions</a></li>
-          </ul>
-        </div>
-
-        <!-- Coverage -->
-        <div class="dm-footer__column">
-          <h4 class="dm-footer__heading">Markets Served</h4>
-          <ul class="dm-footer__links">
-            <li><span><i class="fa-solid fa-check text-green"></i> Kerala, India</span></li>
-            <li><span><i class="fa-solid fa-check text-green"></i> Mumbai & Bengaluru</span></li>
-            <li><span><i class="fa-solid fa-check text-green"></i> Dubai & Abu Dhabi, UAE</span></li>
-            <li><span><i class="fa-solid fa-check text-green"></i> Riyadh, Saudi Arabia</span></li>
-            <li><span><i class="fa-solid fa-check text-green"></i> Qatar & Kuwait</span></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="dm-footer__bottom">
-        <div class="dm-footer__copyright">
-          © <span id="currentYear">2026</span> Nived Digital. All rights reserved.
-        </div>
-        <div class="dm-footer__location">
-          <span>Digital Marketing & Paid Media Scaling Specialist</span>
-          <span>•</span>
-          <a href="#home" class="dm-back-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ==================== STRATEGY AUDIT MODAL ==================== -->
-  <div id="consultationModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modalHeading">
-    <div class="modal-dialog">
-      <button type="button" class="modal-close-btn close-modal" aria-label="Close modal">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div id="modalHeader" class="modal-header">
-        <p class="dm-eyebrow">1-ON-1 STRATEGY AUDIT</p>
-        <h3 id="modalHeading" class="modal-title">Book Your Free Ad Account Audit</h3>
-        <p class="modal-subtitle">Share your business details below. You'll be connected directly with Nived on WhatsApp with a customized scaling blueprint.</p>
-      </div>
-
-      <!-- Lead Capture Form -->
-      <form id="leadForm" class="modal-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="clientName" class="form-label">Full Name *</label>
-            <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
-          </div>
-          <div class="form-group">
-            <label for="clientEmail" class="form-label">Email Address *</label>
-            <input type="email" id="clientEmail" name="email" class="form-input" placeholder="you@company.com" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="clientPhone" class="form-label">WhatsApp Number *</label>
-            <input type="tel" id="clientPhone" name="phone" class="form-input" placeholder="+91 98765 43210" required>
-          </div>
-          <div class="form-group">
-            <label for="clientWebsite" class="form-label">Website or Store URL</label>
-            <input type="url" id="clientWebsite" name="website" class="form-input" placeholder="https://yourbrand.com">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="serviceInterest" class="form-label">Primary Objective / Service Needed</label>
-          <select id="serviceInterest" name="service" class="form-select">
-            <option value="Meta Ads Scaling">Meta Ads (Facebook & IG) Scaling</option>
-            <option value="Google Ads & PMax">Google Ads & Performance Max</option>
-            <option value="Shopify Store Development">Shopify Store Development & CRO</option>
-            <option value="Full Funnel & CAPI Audit">Full-Funnel & CAPI Tracking Audit</option>
-            <option value="Ad Creative Strategy">Ad Creative & Hook Frameworks</option>
-            <option value="General Strategy Call">General Strategy Consultation</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="monthlySpend" class="form-label">Current Monthly Ad Spend</label>
-          <select id="monthlySpend" name="adSpend" class="form-select">
-            <option value="Under ₹50,000">Under ₹50,000 / month</option>
-            <option value="₹50,000 - ₹2,00,000" selected>₹50,000 - ₹2,00,000 / month</option>
-            <option value="₹2,00,000 - ₹5,00,000">₹2,00,000 - ₹5,00,000 / month</option>
-            <option value="₹5,00,000+">₹5,00,000+ / month (High Scale)</option>
-            <option value="Starting Fresh">Not spending yet (Launching soon)</option>
-          </select>
-        </div>
-
-        <button type="submit" class="dm-btn dm-btn-primary dm-btn-block">
-          <span>Connect Directly on WhatsApp</span>
-          <i class="fa-brands fa-whatsapp"></i>
-        </button>
-
-        <p class="form-footnote">
-          <i class="fa-solid fa-lock"></i> 100% confidential. No spam. Direct response within 2 hours.
-        </p>
-      </form>
-
-      <!-- Success Screen -->
-      <div id="formSuccess" class="modal-success" style="display: none;">
-        <div class="success-icon-box">
-          <i class="fa-solid fa-circle-check"></i>
-        </div>
-        <h4 class="success-title">Request Received!</h4>
-        <p class="success-desc">
-          Your audit request details have been queued. If WhatsApp didn't open automatically, click the button below to message Nived right away:
-        </p>
-        <a id="successWaBtn" href="https://wa.me/918590101541" target="_blank" rel="noopener noreferrer" class="dm-btn dm-btn-wa dm-btn-block">
-          <i class="fa-brands fa-whatsapp"></i>
-          <span>Open WhatsApp Chat</span>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ==================== CASE STUDY DETAIL MODAL ==================== -->
-  <div id="caseStudyModal" class="modal-backdrop" aria-hidden="true" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <button type="button" class="modal-close-btn close-case-modal" aria-label="Close case study details">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div class="case-modal-body" id="caseModalContent">
-        <!-- Injected via JavaScript -->
-      </div>
-    </div>
-  </div>
-
-  <!-- ==================== STICKY MOBILE BOTTOM BAR ==================== -->
-  <nav class="mobile-bottom-bar" aria-label="Mobile quick actions">
-    <a href="https://wa.me/918590101541?text=Hi%20Nived,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20scaling%20my%20ads" target="_blank" rel="noopener noreferrer" class="mob-bar-item mob-wa" title="WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span>WhatsApp</span>
-    </a>
-    <a href="tel:+918590101541" class="mob-bar-item mob-call" title="Call Nived">
-      <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
-    </a>
-    <button type="button" class="mob-bar-item mob-audit trigger-modal-btn" title="Book Free Audit">
-      <i class="fa-solid fa-calendar-check"></i>
-      <span>Book Audit</span>
-    </button>
-  </nav>
-
-  <!-- Notification Toast -->
-  <div id="toastNotification" class="toast-popup" role="status" aria-live="polite"></div>
-
-  <!-- Scripts -->
-  <script src="app.js?v=6.0"></script>
-</body>
-</html>
+  requestAnimationFrame(glide);
+}
+requestAnimationFrame(glide);
+const brands = document.querySelector('#brand-track');
+const brandTiles = Array.from(brands.children);
+for (let copy = 0; copy < 2; copy++) {
+  for (const tile of brandTiles) {
+    const duplicate = tile.cloneNode(true);
+    duplicate.tabIndex = -1;
+    duplicate.setAttribute('aria-hidden', 'true');
+    brands.append(duplicate);
+  }
+}
+let brandPlaying = !motion.matches;
+let brandsVisible = false;
+let brandHover = false;
+let brandPosition = 0;
+let brandRendered = 0;
+let brandLastFrame;
+brands.addEventListener('pointerenter', event => { brandHover = event.pointerType === 'mouse'; });
+brands.addEventListener('pointerleave', () => { brandHover = false; });
+brands.addEventListener('pointerdown', event => { if (event.pointerType === 'touch') brandPlaying = false; });
+motion.addEventListener('change', () => { brandPlaying = !motion.matches; });
+new IntersectionObserver(([entry]) => { brandsVisible = entry.isIntersecting; }).observe(brands);
+function glideBrands(now) {
+  const elapsed = brandLastFrame === undefined ? 0 : Math.min(now - brandLastFrame, 40);
+  brandLastFrame = now;
+  if (brandPlaying && brandsVisible && !brandHover && !document.hidden && !brands.matches(':focus-within')) {
+    const width = brands.children[brandTiles.length].offsetLeft - brandTiles[0].offsetLeft;
+    if (brands.scrollLeft !== brandRendered) brandPosition = brands.scrollLeft;
+    if (width > 0) {
+      brandPosition = (brandPosition + elapsed * loopSpeed) % width;
+      brands.scrollLeft = brandPosition;
+      brandRendered = brands.scrollLeft;
+    }
+  }
+  requestAnimationFrame(glideBrands);
+}
+requestAnimationFrame(glideBrands);
+</script></body></html>
